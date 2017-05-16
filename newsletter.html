@@ -11,23 +11,37 @@
   <style type="text/css">
     #mc_embed_signup {
       background: #fff;
+      width: 20%;
+      height: 100%;
       clear: left;
-      font: 1rem Helvetica, Arial, sans-serif;
-      text-align: center;
+      font: 1em Helvetica, Arial, sans-serif;
+      text-align: right;
       align-items: center;
-      padding: 5rem;
+      padding: 2rem;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 0;
+      padding-right: 9%;
       line-height: 3em;
     }
 
     /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
   </style>
-  <div id="title">
-    <h1>subscribe to newsletter</h1>
+  <div>
+    <h1 class='title'>subscribe to newsletter</h1>
   </div>
   <div id="mc_embed_signup">
     <form action="//everythingeverytime.us15.list-manage.com/subscribe/post?u=7ddddd877bcaa93a171916f0d&amp;id=6526f4cd8b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">
+        <div class="mc-field-group">
+          <label for="mce-FNAME">First Name:  </label>
+          <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+        </div>
+        <div class="mc-field-group">
+          <label for="mce-LNAME">Last Name:  </label>
+          <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+        </div>
         <div class="mc-field-group">
           <label for="mce-EMAIL">Email Address:  </label>
           <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
