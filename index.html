@@ -5,15 +5,35 @@
   <meta charset="utf-8">
   <title>every thing every time</title>
   <link href="style.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript">
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 </head>
+
+
 
 <body>
 
   <header>
-    <h1 class='title'>every thing every time</h1>
-  </header>
+    <div class="topnav">
+      <ul>
+        <li><a href="">about</a></li>
+        <li><a href="">locations</a></li>
+          <div class="title"><li><a href="index.html">every thing every time</a></li></div>
+        <li><a href="">events</a></li>
+        <li><a href="">newsletter</a></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </ul>
+    </div>
 
-  <div class="poem">
+  <div id="poem">
     <h3>09:45AM/22/06/2017</h3>
     <h2>the sun rises and it's colder than yesterday</h2>
     <h2>the streets are empty</h2>
