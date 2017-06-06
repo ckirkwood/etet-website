@@ -14,7 +14,6 @@ html {
 
 * {
     font-family: 'BC-Falster-Grotesk-Regular', sans-serif;
-    border: 1px solid rgb(255, 0, 0);
 }
 
 body {
@@ -50,32 +49,31 @@ ul {
 }
 
 .poem {
-  max-width: 45%;
+  max-width: 60%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 6rem;
-  display: block;
+  display: inline-grid;
 }
 
 .poem h2 {
   font-size: 1.75em;
   color: #000000;
-  display: inline-grid;
+  display: inline-table;
   text-transform: lowercase;
   text-align: left;
   font-weight: lighter;
-  padding-left: 0;
-  padding-right: 0;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .poem h3 {
   font-size: 1em;
   color: #0000ff;
-  display: inline-grid;
+  display:inline-table;
   text-transform: lowercase;
   text-align: left;
   font-weight: lighter;
-  padding-left: 0;
-  padding-right: 0;
-
+  margin-left: 10%;
+  margin-right: 10%;
 }
