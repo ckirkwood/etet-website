@@ -24,7 +24,6 @@ body {
 }
 
 header {
-  height: auto;
   width: auto;
   margin left: auto;
   margin-right: auto;
@@ -38,50 +37,45 @@ ul {
 
 .title {
   width: auto;
-  height: 100%;
   color: #000000;
   display: block;
   text-transform: lowercase;
   text-align: center;
   font-size: 1.5em;
-  padding: 1.15rem 0;
   margin left: auto;
   margin-right: auto;
 }
 
-.banner {
-  height: 100%;
-  width: auto;
-  overflow: hidden;
+.poem {
+  width: 75%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  margin-top: 5rem;
 }
 
-.banner img {
-  max-height: 38rem;
-  width: auto;
-  min-height: 15rem;
+.poem h2 {
+  font-size: 1.75em;
   display: block;
+  color: #000000;
+  text-transform: lowercase;
+  text-align: left;
+  margin: 1.75rem;
+  font-weight: lighter;
+  width: 65%;
+  max-width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.mailinglist {
-  width: 100%;
-}
+.poem h3 {
+  font-size: 1em;
+  color: #0000ff;
+  display: block;
+  margin: 1.75rem;
+  font-weight: lighter;
+  width: 65%;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 
-.mailinglist p {
-  width: 100%;
-  height: 100%;
-  padding-top: 0.6rem;
-  text-align: center;
-  text-transform: lowercase;
-}
-
-.mailinglist a {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  text-transform: lowercase;
-  text-decoration: none;
-  font-size: 1rem;
-  color: #235cbe
 }
