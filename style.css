@@ -34,6 +34,10 @@ header {
   overflow: hidden;
 }
 
+.hamburger {
+  font-family: Helvetica, sans-serif;
+}
+
 ul {
   width: 100%;
   display: block;
