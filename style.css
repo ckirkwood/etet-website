@@ -30,43 +30,37 @@ header {
   margin-right: auto;
 }
 
-.topnav {
-  overflow: hidden;
-}
 
 
 ul {
-  width: 100%;
-  display: block;
   text-decoration: none;
   text-align: center;
-  margin: 2rem 0;
-  margin: 2rem 0;
+  margin: 2rem;
   list-style-type: none;
 }
 
-.title a{
+#title {
   color: #000000;
-  display: block;
   text-transform: lowercase;
   text-align: center;
   text-decoration: none;
   font-weight:lighter;
-  font-size: 1.5em;
-  margin: 0 5%;
-  float: left;
+  font-size: 1.4em;
 }
 
 li a {
-  color: #636363;
-  display: block;
+  color: #000000;
+  display: inline-block;
   text-transform: lowercase;
   text-align: center;
   text-decoration: none;
   font-weight:lighter;
   font-size: 1.3em;
+}
+
+li {
+  display: inline-block;
   margin: 0 5%;
-  float: none;
 }
 
 #poem {
@@ -74,7 +68,6 @@ li a {
   margin: 0 auto;
   margin-top: 3rem;
   display: inline-block;
-
 }
 
 #poem h2 {
