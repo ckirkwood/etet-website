@@ -24,7 +24,6 @@
       padding-right: 9%;
       line-height: 3em;
     }
-
     /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
   </style>
@@ -32,14 +31,22 @@
 
 <body>
 
-  <ul>
-    <li><a href="about.html">about</a></li>
-    <li><a href="locations.html">locations</a></li>
-    <li id="title"><a href="index.html">every thing every time</a></li>
-    <li><a href="events.html">events</a></li>
-    <li><a href="newsletter.html">newsletter</a></li>
+  <ul class="navigation">
+    <li class="nav-item"><a href="about.html">about</a></li>
+    <li class="nav-item"><a href="locations.html">locations</a></li>
+    <li class="nav-item"><a href="events.html">events</a></li>
+    <li class="nav-item"><a href="newsletter.html">newsletter</a></li>
   </ul>
-  
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger"></label>
+
+  <div class="site-wrap">
+
+    <div id="title">
+      <h1><a href="index.html">every thing every time</a></h1>
+    </div>
+
     <div>
       <h2>subscribe to newsletter</h2>
     </div>
@@ -63,27 +70,48 @@
             <div class="response" id="mce-success-response" style="display:none"></div>
           </div>
 
-      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7ddddd877bcaa93a171916f0d_6526f4cd8b" tabindex="-1" value=""></div>
-      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7ddddd877bcaa93a171916f0d_6526f4cd8b" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+      </form>
     </div>
-  </form>
-</div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-<script type='text/javascript'>
-  (function($) {
-    window.fnames = new Array();
-    window.ftypes = new Array();
-    fnames[0] = 'EMAIL';
-    ftypes[0] = 'email';
-    fnames[1] = 'FNAME';
-    ftypes[1] = 'text';
-    fnames[2] = 'LNAME';
-    ftypes[2] = 'text';
-  }(jQuery));
-  var $mcj = jQuery.noConflict(true);
-</script>
-<!--End mc_embed_signup—>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>
+      (function($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'FNAME';
+        ftypes[1] = 'text';
+        fnames[2] = 'LNAME';
+        ftypes[2] = 'text';
+      }(jQuery));
+      var $mcj = jQuery.noConflict(true);
+    </script>
 
+
+    <footer>
+      <div id="copyright">
+        <p>© 2017 Naho Matsuda</p>
+
+        <p><em>every thing every time</em> is a FutureEverything & FAULT LINES project commissioned by CityVerve.</p>
+        <p>Supported with public funding by the National Lottery through Arts Council England.</p>
+      </div>
+      <div id="logos">
+        <img src="images/FE_Logo_White.png" alt="FutureEverything logo">
+        <img src="images/CityVerve_Logo_on_black.png" alt="CityVerve Logo">
+        <img src="images/lottery_Logo_White RGB.png" alt="Arts Council England Logo">
+      </div>
+      <div id="social">
+        <div class="socialButton"><a href="https://twitter.com/intent/tweet/?text=every%20thing%20every%20time%20by%20Naho%20Matsuda&amp;url=http%3A%2F%2Feverythingeverytime.net" target="_blank"><img src="images/social/twitter.png" alt="Share on Twitter"></a></div>
+        <div class="socialButton"><a href="https://facebook.com/sharer/sharer.php?every%20thing%20every%20time%20by%20Naho%20Matsuda&amp;url=http%3A%2F%2Feverythingeverytime.net" target="_blank"><img src="images/social/facebook.png" alt="Share on Facebook"></a></div>
+        <div class="socialButton"><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Feverythingeverytime.net&amp;title=every%20thing%20every%20time%20by%20Naho%20Matsuda.&amp;summary=every%20thing%20every%20time%20by%20Naho%20Matsuda&amp;source=http%3A%2F%2Feverythingeverytime.net" target="_blank"><img src="images/social/linkedin.png" alt="Share on LinkedIn"></a></div>
+        <div class="socialButton"><a href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=every%20thing%20every%20time%20by%20Naho%20Matsuda&amp.&amp;content=http%3A%2F%2Feverythingeverytime.net&amp;canonicalUrl=http%3A%2F%2Feverythingeverytime.net&amp;shareSource=tumblr_share_button" target="_blank"><img src="images/social/tumblr.png" alt="Share on Tumblr"></a></div>
+        <div class="socialButton"><a href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Feverythingeverytime.net&amp;media=http%3A%2F%2Feverythingeverytime.net&amp;description=every%20thing%20every%20time%20by%20Naho%20Matsuda" target="_blank"><img src="images/social/pinterest.png" alt="Share on Pinterest"></a></div>
+      </div>
+    </footer>
+  </div>
 
 </body>
