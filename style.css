@@ -80,6 +80,11 @@ header {
   margin-right: 1.75em;
 }
 
+.nav-item a:hover{
+  background: #292929;
+  color: rgb(253, 255, 230);
+}
+
 .site-wrap {
   min-height: 100%;
   background-color: white;
@@ -199,7 +204,34 @@ label[for="nav-trigger"] {
   margin: 0 auto;
   text-align: left;
   padding: 10px 0;
+}
 
+.boilerplate h1 {
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.commissionLogos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.partnerLogos {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+}
+
+.commissionLogos img {
+  height: 3rem;
+  display: inline-block;
+  padding: 2%;
+}
+
+.partnerLogos img {
+  height: 3rem;
+  display: inline-block;
+  padding: 2%;
 }
 
 footer {
@@ -237,6 +269,11 @@ footer {
 
 #logos img {
   display: inline-block;
+  height: 3rem;
+  margin: auto 0;
+}
+
+#logos a {
   height: 3rem;
   margin: auto 0;
 }
