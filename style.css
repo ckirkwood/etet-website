@@ -195,7 +195,7 @@ label[for="nav-trigger"] {
   padding: 2%;
   background-color: rgba(253, 255, 230, 0.8);
   border-radius: 3%;
-  margin: 5% auto;
+  margin: 2.5% auto;
 }
 
 .boilerplate p {
@@ -213,26 +213,56 @@ label[for="nav-trigger"] {
 
 .commissionLogos {
   display: flex;
-  justify-content: space-around;
-}
-
-.partnerLogos {
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-gap: 10px;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto auto;
 }
 
 .commissionLogos img {
   height: 3rem;
   display: inline-block;
+}
+
+.commissionLogos a {
+  height: 3rem;
+  display: inline-block;
   padding: 2%;
+}
+
+.partnerLogos {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: auto auto;
 }
 
 .partnerLogos img {
   height: 3rem;
   display: inline-block;
+  margin-top: 2%;
+}
+
+.partnerLogos a {
+  height: 3rem;
+  display: inline-block;
   padding: 2%;
 }
+
+#row1 {
+  display:inline-block;
+  text-align: right;
+}
+
+#row2 {
+  display: inline-block;
+  text-align: left;
+}
+
+#row2 img {
+  margin-top: 0;
+  margin-left: 2%;
+}
+
+
 
 footer {
   background-color: #292929;
@@ -260,21 +290,22 @@ footer {
 }
 
 #logos {
-  width: 40%;
+  width: 50%;
   height: 7rem;
   display: flex;
   justify-content: space-between;
+  margin: 0 5%;
 }
 
 
 #logos img {
   display: inline-block;
-  height: 3rem;
+  height: 2.5rem;
   margin: auto 0;
 }
 
 #logos a {
-  height: 3rem;
+  height: 2.5rem;
   margin: auto 0;
 }
 
