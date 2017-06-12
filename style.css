@@ -31,7 +31,6 @@ header {
   margin-right: auto;
 }
 
-
 #title {
   text-align: center;
   display: block;
@@ -125,8 +124,6 @@ label[for="nav-trigger"] {
   left: 195px;
 }
 
-
-
 #poem {
   max-width: 45%;
   margin: 0 auto;
@@ -183,10 +180,68 @@ label[for="nav-trigger"] {
 .copy {
   padding: 2%;
   background-color: rgba(253, 255, 230, 0.8);
-  border-radius: 4%;
+  border-radius: 10px;
   width: 60%;
   display: block;
   margin: 0 auto;
+  text-align: left;
+}
+
+#eventCopy {
+  width: 70%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10% auto;
+  margin-bottom: 0;
+}
+
+#event1 {
+  width: 25%;
+  height: 100%;
+  background-image: url("images/events/event1.png");
+}
+
+#event2 {
+  width: 25%;
+  height: 100%;
+  background-image: url("images/events/event2.png");
+}
+
+#event3 {
+  width: 25%;
+  height: 100%;
+  background-image: url("images/events/event3.png");
+}
+
+#eventDetails {
+  width: 70%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 10%;
+}
+
+.eventTitle {
+  width: 25%;
+  height: 100%;
+  background-color: rgba(253, 255, 230, 0.8);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px 0;
+}
+
+.eventTitle p {
+  padding: 0;
+  margin: 0;
+  font-size: 0.75em;
+  color: rgb(138, 138, 138);
+}
+
+.eventTitle a {
+  text-decoration: none;
+  color: #000;
 }
 
 .boilerplate {
@@ -194,7 +249,7 @@ label[for="nav-trigger"] {
   height: auto;
   padding: 2%;
   background-color: rgba(253, 255, 230, 0.8);
-  border-radius: 3%;
+  border-radius: 10px;
   margin: 2.5% auto;
 }
 
@@ -262,8 +317,6 @@ label[for="nav-trigger"] {
   margin-left: 2%;
 }
 
-
-
 footer {
   background-color: #292929;
   width: 100%;
@@ -297,7 +350,6 @@ footer {
   margin: 0 5%;
 }
 
-
 #logos img {
   display: inline-block;
   height: 2.5rem;
@@ -308,7 +360,6 @@ footer {
   height: 2.5rem;
   margin: auto 0;
 }
-
 
 #social {
   display: flex;
