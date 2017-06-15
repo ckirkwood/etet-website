@@ -5,59 +5,97 @@
   <meta charset="utf-8">
   <title>every thing every time</title>
   <link href="style.css" type="text/css" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type="text/javascript" src="date_time.js"></script>
 </head>
 
+
 <body>
+
+  <div class="background-image"></div>
+
   <ul class="navigation">
-    <li class="nav-item"><a href="index.html">latest poem</a></li>
+    <li class="nav-item"><a href="index.html">poem</a></li>
     <li class="nav-item"><a href="about.html">about</a></li>
     <li class="nav-item"><a href="locations.html">locations</a></li>
     <li class="nav-item"><a href="events.html">events</a></li>
-    <li class="nav-item"><a href="newsletter.html">newsletter</a></li>
+    <li class="nav-item"><a href="contact.html">contact</a></li>
   </ul>
 
   <input type="checkbox" id="nav-trigger" class="nav-trigger" />
   <label for="nav-trigger"></label>
 
   <div class="site-wrap">
+  <div class="site-wrap-bg"></div>
 
     <div id="title">
       <h1><a href="index.html">every thing every time</a></h1>
     </div>
 
-    <div id="poem">
-      <h3>09:45AM/22/06/2017</h3>
-      <h2>the sun rises and it's colder than yesterday</h2>
-      <h2>the streets are empty</h2>
-      <h2>today is the last day of term</h2>
-      <h2>the bus is on time and the bar is closed</h2>
-      <h2>the car park is almost empty</h2>
-      <h2>the traffic light turns green</h2>
-      <h2>the cleaning shift starts</h2>
-      <h2>someone commits a crime</h2>
-      <h2>and bread is being delivered</h2>
+
+    <div id="controls">
+      <form action="">
+        Choose location:<br>
+        <input type="radio" name="location" checked value="none"> None<br> <!-- checked by default -->
+        <input type="radio" name="location" value="university"> University Place<br>
+        <input type="radio" name="location" value="citylabs"> CityLabs 1.0<br>
+        <input type="radio" name="location" value="library"> Manchester Central Library<br>
+        <input type="radio" name="location" value="gardens"> Hulme Community Garden Centre<br>
+      </form>
     </div>
 
 
-    <footer>
-      <div id="copyright">
-        <p>© 2017 Naho Matsuda</p>
 
-        <p><em>every thing every time</em> is a FutureEverything & FAULT LINES project commissioned by CityVerve.</p>
-        <p>Supported with public funding by the National Lottery through Arts Council England.</p>
-      </div>
-      <div id="logos">
-        <a href="http://futureeverything.org" target="_blank"><img src="images/logos/FE_Logo_White.png" alt="FutureEverything logo"></a>
-        <a href="http://cityverve.org.uk" target="_blank"><img src="images/logos/CityVerve_Logo_on_black.png" alt="CityVerve Logo"></a>
-        <a href="http://artscouncil.org.uk" target="_blank"><img src="images/logos/lottery_Logo_White RGB.png" alt="Arts Council England Logo"></a>
-      </div>
-      <div id="social">
-        <div class="socialButton"><a href="https://twitter.com/intent/tweet/?text=every%20thing%20every%20time%20by%20Naho%20Matsuda&amp;url=http%3A%2F%2Feverythingeverytime.net" target="_blank"><img src="images/social/twitter.png" alt="Share on Twitter"></a></div>
-        <div class="socialButton"><a href="https://facebook.com/sharer/sharer.php?every%20thing%20every%20time%20by%20Naho%20Matsuda&amp;url=http%3A%2F%2Feverythingeverytime.net" target="_blank"><img src="images/social/facebook.png" alt="Share on Facebook"></a></div>
-        <div class="socialButton"><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Feverythingeverytime.net&amp;title=every%20thing%20every%20time%20by%20Naho%20Matsuda.&amp;summary=every%20thing%20every%20time%20by%20Naho%20Matsuda&amp;source=http%3A%2F%2Feverythingeverytime.net" target="_blank"><img src="images/social/linkedin.png" alt="Share on LinkedIn"></a></div>
-        <div class="socialButton"><a href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=every%20thing%20every%20time%20by%20Naho%20Matsuda&amp.&amp;content=http%3A%2F%2Feverythingeverytime.net&amp;canonicalUrl=http%3A%2F%2Feverythingeverytime.net&amp;shareSource=tumblr_share_button" target="_blank"><img src="images/social/tumblr.png" alt="Share on Tumblr"></a></div>
-        <div class="socialButton"><a href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Feverythingeverytime.net&amp;media=http%3A%2F%2Feverythingeverytime.net&amp;description=every%20thing%20every%20time%20by%20Naho%20Matsuda" target="_blank"><img src="images/social/pinterest.png" alt="Share on Pinterest"></a></div>
-      </div>
-    </footer>
+    <br />
+    <span id="date_time"></span><br />
+    <div id="poem">poem loading...</div>
+
+    <div id="readout">
+    </div>
+
+  </body>
+
+
+  <script type="text/javascript">window.onload = date_time('date_time');</script>
   </div>
-</body>
+
+  <script type="text/javascript">
+    var poemDiv = document.getElementById('poem');
+    var readoutDiv = document.getElementById('readout');
+    var currentTicks = 0;
+    var maxTicks = 60;
+    getPoem = function() {
+      var url;
+        url = "http://everythingeverytime.herokuapp.com/poem";
+      fetch(url + getLocation())
+      .then((resp) => resp.json())
+      .then(function(data) {
+        printPoem(data);
+      })
+    }
+    getLocation = function() {
+      var checkedElement = document.querySelector('input[name="location"]:checked').value;
+      return "?location=" + checkedElement;
+    }
+    printPoem = function(data) {
+      poemDiv.innerHTML = "";
+      for(var i = 0; i < data.poem.length; i++) {
+        poemDiv.innerHTML = poemDiv.innerHTML + data.poem[i] + "<br />";
+      }
+    }
+    updateCounter = function() {
+      if(currentTicks < maxTicks) {
+        currentTicks++;
+      } else {
+        currentTicks = 0;
+        poemDiv.innerHTML = "poem loading...";
+        getPoem();
+      }
+      readoutDiv.innerHTML = "Refreshing in " + (maxTicks - currentTicks) + " seconds";
+    }
+    setInterval(function() {
+      updateCounter();
+    }, 1000);
+    getPoem();
+  </script>
+</html>
