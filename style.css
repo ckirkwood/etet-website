@@ -4,7 +4,7 @@ html {
 
 .background-image {
   background: url('images/etet_website-background-01.jpg');
-  background-size: 150%;
+  background-size: 125%;
   position: absolute;
   left: 0;
   top: 0;
@@ -114,7 +114,7 @@ header {
 
 .site-wrap-bg {
   background: url('images/etet_website-background-01.jpg');
-  background-size: 150%;
+  background-size: 125%;
   position: absolute;
   left: 0;
   top: 0;
@@ -240,6 +240,10 @@ h1,h2,h3 {
   margin: 2% auto;
 }
 
+.copy h1 {
+  font-size: 1.5em;
+}
+
 .copy {
   padding: 2%;
   background-color: rgba(255, 255, 255, 0.8);
@@ -273,52 +277,74 @@ h1,h2,h3 {
 }
 
 .commissionLogos {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
-  margin: auto auto;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  padding: auto;
+
 }
 
 .commissionLogos img {
-  height: 3rem;
-  display: inline-block;
+  height: 4rem;
 }
 
 .commissionLogos a {
-  height: 3rem;
+  height: 4rem;
   display: inline-block;
-  padding: 2%;
 }
 
 .partnerLogos {
-  display: inline-flex;
-  justify-content: space-between;
-  margin: auto auto;
+  width: 100%;
+  padding: auto;
 }
 
 .partnerLogos img {
-  height: 3rem;
-  display: inline-block;
-  margin-top: 2%;
+  height: 2.5rem;
 }
 
 .partnerLogos a {
-  height: 3rem;
+  height: 2.5rem;
   display: inline-block;
   padding: 2%;
 }
 
 #row1 {
-  display:inline-block;
-  text-align: right;
+  display: flex;
+  justify-content: space-around;
 }
 
 #row2 {
-  display: inline-block;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 
-#row2 img {
+#row3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+#row4 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+  height: 4rem;
+}
+
+#row4 img {
+  height: 4rem;
+}
+
+#row5 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+#logoRow img {
   margin-top: 0;
   margin-left: 2%;
 }
