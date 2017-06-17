@@ -341,7 +341,7 @@ h1,h2,h3 {
   display: flex;
   justify-content: space-between;
   margin-top: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 #logoRow img {
@@ -382,7 +382,7 @@ h1,h2,h3 {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 
 .eventTitle {
@@ -407,9 +407,14 @@ h1,h2,h3 {
 }
 
 #map {
-  float: left;
-  display: inline-block;
-  margin-top: 3rem;
+  padding: 2%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  width: 90%;
+  display: block;
+  margin: 3% auto;
+  margin-bottom: 0;
+  text-align: left;
 }
 
 
@@ -417,7 +422,7 @@ h1,h2,h3 {
 footer {
   background-color: #292929;
   width: 100%;
-  height: 4%;
+  height: 5.5rem;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -432,18 +437,17 @@ footer {
   color: #ffffff;
   font-family: 'Helvetica', sans-serif;
   font-size: 11px;
-  width: 25%;
+  width: 35%;
   height: 100%;
-  display: inline-block;
+  display: block;
   text-align: left;
   float: left;
-  position: relative;
   margin-left: 1%;
   background-color: #292929;
 }
 
 #logos {
-  width: 30%;
+  width: 35%;
   height: 100%;
   display: flex;
   justify-content: space-between;
