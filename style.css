@@ -495,7 +495,7 @@ footer {
   }
 
   #container {
-    max-width: 75%;
+    max-width: 90%;
     height: 100%;
     margin: auto;
     margin-top: 3rem;
@@ -521,11 +521,10 @@ footer {
     margin: 0 auto;
     display: inline-block;
     padding: auto auto;
-    font-size:3em;
+    font-size:4em;
     color:#292929;
     text-align: left;
   }
-
 }
 
 
