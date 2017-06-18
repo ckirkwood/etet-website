@@ -455,9 +455,7 @@ footer {
 }
 
 @media only screen and (max-width:425px) { /* smartphones, iPhone, portrait 480x320 phones */
-  * {
-    border: 1px solid rgb(255, 0, 0);
-  }
+
 
   .background-image {
     background: url('images/etet_website-background-01.jpg');
