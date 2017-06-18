@@ -480,7 +480,7 @@ footer {
   margin: auto 0;
 }
 
-@media only screen and (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */
+@media only screen and (max-width:425px) { /* smartphones, iPhone, portrait 480x320 phones */
   .background-image {
     background: url('images/etet_website-background-01.jpg');
     background-size: 125%;
@@ -495,11 +495,11 @@ footer {
   }
 
   #container {
-    max-width: 90%;
+    max-width: 100%;
     height: 100%;
     margin: auto;
     margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 0;
     display: inline-block;
     text-align: left;
   }
@@ -516,22 +516,32 @@ footer {
   }
 
   #poem {
-    width: 100%;
+    width: 110%;
     height: 100%;
     margin: 0 auto;
     display: inline-block;
     padding: auto auto;
-    font-size:4em;
+    font-size:10em;
     color:#292929;
     text-align: left;
   }
 }
 
 
-@media only screen and (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
 
-@media only screen and (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media only screen and (min-width:426px) and (max-width: 768px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  #poem {
+    width: 110%;
+    height: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    padding: auto auto;
+    font-size:7em;
+    color:#292929;
+    text-align: left;
+  }
+}
 
-@media only screen and (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media only screen and (min-width:768px) and (max-width: 1024px) { /* big landscape tablets, laptops, and desktops */ }
 
-@media only screen and (min-width:1281px) { /* hi-res laptops and desktops */ }
+@media only screen and (min-width:1025px) { /* hi-res laptops and desktops */ }
