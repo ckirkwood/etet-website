@@ -694,13 +694,14 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+    position: absolute;
+    left: 0;
   }
 
   #map iframe {
-    width: 50%;
+    width: 80%;
     margin: 30% auto;
     display: block;
-    float: left;
   }
 
   #eventCopy {
