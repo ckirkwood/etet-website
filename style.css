@@ -694,11 +694,11 @@ footer {
     justify-content: center;
     position: relative;
     left: 0;
+    margin-top: 30%;
   }
 
   #map iframe {
-    max-width: 280px;
-    margin: 30% 0;
+    max-width: 270px;
     display: block;
   }
 
