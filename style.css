@@ -505,7 +505,7 @@ footer {
   }
 
   #date_time {
-    font-size: 1.5em;
+    font-size: 0.75em;
     color: #0000ff;
     display: block;
     font-weight: lighter;
@@ -521,7 +521,7 @@ footer {
     margin: 0 auto;
     display: inline-block;
     padding: auto auto;
-    font-size:10em;
+    font-size:1em;
     color:#292929;
     text-align: left;
   }
@@ -530,16 +530,7 @@ footer {
 
 
 @media only screen and (min-width:426px) and (max-width: 768px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
-  #poem {
-    width: 110%;
-    height: 100%;
-    margin: 0 auto;
-    display: inline-block;
-    padding: auto auto;
-    font-size:7em;
-    color:#292929;
-    text-align: left;
-  }
+
 }
 
 @media only screen and (min-width:768px) and (max-width: 1024px) { /* big landscape tablets, laptops, and desktops */ }
