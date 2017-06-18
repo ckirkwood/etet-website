@@ -690,7 +690,10 @@ footer {
     margin: auto 0;
   }
 
-
+  #map {
+    display: flex;
+    justify-content: center;
+  }
 
   #map iframe {
     width: 80%;
