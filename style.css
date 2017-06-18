@@ -5,7 +5,7 @@ html {
 .background-image {
   background: url('images/etet_website-background-01.jpg');
   background-size: 125%;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   display: block;
@@ -63,8 +63,13 @@ header {
 }
 
 .navigation {
-  margin-right: 0;
-  position: sticky;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 2%;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 1;
   list-style: none;
   background: rgba(0, 0, 0, 0);
@@ -509,13 +514,13 @@ footer {
     height: auto;
     padding: 2px;
     display: block;
+    margin-top: 30%;
   }
 
 
   #copy-body img {
     width: 100%;
     margin: 2% auto;
-    margin-top: 30%;
   }
 
   .copy h1 {
@@ -603,7 +608,7 @@ footer {
     width: 150px;
     position: absolute;
     left: 0;
-    text-float: left;
+    text-align: left;
   }
 
   .navigation li {
@@ -682,6 +687,75 @@ footer {
     margin: auto 0;
   }
 
+  #map {
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    height: 100%;
+    display: block;
+    margin: 30% auto;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  #map iframe {
+    width: 100%;
+  }
+
+  #eventCopy {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30% auto;
+    margin-bottom: 0;
+  }
+
+  #event1 {
+    width: 30%
+    background-image: url("images/events/event1.png");
+  }
+
+  #event2 {
+    width: 30%;
+    background-image: url("images/events/event2.png");
+  }
+
+  #event3 {
+    width: 30%;
+    background-image: url("images/events/event3.png");
+  }
+
+  #eventDetails {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 75%;
+  }
+
+  .eventTitle {
+    width: 25%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px 0;
+  }
+
+  .eventTitle p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.75em;
+    color: rgb(138, 138, 138);
+  }
+
+  .eventTitle a {
+    text-decoration: none;
+    color: #000;
+  }
+
 }
 
 
@@ -690,6 +764,35 @@ footer {
 
 }
 
-@media only screen and (min-width:768px) and (max-width: 1024px) { /* big landscape tablets, laptops, and desktops */ }
+@media only screen and (min-width:768px) and (max-width: 1024px) { /* big landscape tablets, laptops, and desktops */
 
-@media only screen and (min-width:1025px) { /* hi-res laptops and desktops */ }
+.background-image {
+  background: url('images/etet_website-background-01.jpg');
+  background-size: 125%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+}
+
+@media only screen and (min-width:1025px) { /* hi-res laptops and desktops */
+
+  .background-image {
+    background: url('images/etet_website-background-01.jpg');
+    background-size: 125%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
