@@ -699,7 +699,7 @@ footer {
   }
 
   #map iframe {
-    width: 320px;
+    max-width: 80%;
     margin: 30% 0;
     display: block;
   }
