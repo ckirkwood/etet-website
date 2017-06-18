@@ -493,7 +493,7 @@ footer {
 
   #poem {
     width: 100%;
-    height: 100%;
+    height: 80%;
     margin: 0 auto;
     display: inline-block;
     padding: auto auto;
@@ -507,6 +507,7 @@ footer {
     position: fixed;
     right: 20px;
     bottom: 20px;
+    margin-top: 20%;
   }
 
   #copy-body {
@@ -700,6 +701,7 @@ footer {
 
   #map iframe {
     width: 100%;
+    margin: auto;
   }
 
   #eventCopy {
