@@ -455,6 +455,9 @@ footer {
 }
 
 @media only screen and (max-width:425px) { /* smartphones, iPhone, portrait 480x320 phones */
+  * {
+    border: 1px solid rgb(255, 0, 0);
+  }
 
   .background-image {
     background: url('images/etet_website-background-01.jpg');
@@ -688,7 +691,7 @@ footer {
   }
 
   #map {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
@@ -696,7 +699,7 @@ footer {
   }
 
   #map iframe {
-    max-width: 80%;
+    width: 320px;
     margin: 30% 0;
     display: block;
   }
