@@ -455,7 +455,7 @@ footer {
 }
 
 @media only screen and (max-width:425px) { /* smartphones, iPhone, portrait 480x320 phones */
-  
+
   .background-image {
     background: url('images/etet_website-background-01.jpg');
     background-size: 125%;
@@ -688,7 +688,7 @@ footer {
   }
 
   #map {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
