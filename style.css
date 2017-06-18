@@ -699,6 +699,7 @@ footer {
     width: 80%;
     margin: 30% auto;
     display: block;
+    float: left;
   }
 
   #eventCopy {
