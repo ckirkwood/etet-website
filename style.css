@@ -384,7 +384,6 @@ h1,h2,h3 {
 
 #map {
   padding: 2%;
-  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   width: 90%;
   display: block;
@@ -691,20 +690,11 @@ footer {
     margin: auto 0;
   }
 
-  #map {
-    padding: 2%;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    height: 100%;
-    display: block;
-    margin: 30% auto;
-    margin-bottom: 0;
-    text-align: left;
-  }
+
 
   #map iframe {
     width: 80%;
-    margin: 0 auto;
+    margin: 30% auto;
     display: block;
   }
 
