@@ -116,6 +116,7 @@ header {
 .site-wrap-bg {
   background: url('images/etet_website-background-01.jpg');
   background-size: 125%;
+  background-repeat: repeat-y;
   position: absolute;
   left: 0;
   top: 0;
@@ -462,6 +463,7 @@ footer {
   .background-image {
     background: url('images/etet_website-background-01.jpg');
     background-size: 125%;
+    background-repeat: repeat-y;
     position: absolute;
     left: 0;
     top: 0;
