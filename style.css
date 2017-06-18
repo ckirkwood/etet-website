@@ -700,7 +700,7 @@ footer {
 
   #map iframe {
     width: 80%;
-    margin: 30% auto;
+    margin: 30% 0;
     display: block;
   }
 
