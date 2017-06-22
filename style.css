@@ -734,7 +734,7 @@ footer {
   #event1 {
     width: 30rem;
     height: auto;
-    background-image: url("images/etet_install_026.jpg");
+    background-image: url("images/event1.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
   }
@@ -749,7 +749,7 @@ footer {
   #event2 {
     width: 30rem;
     height: auto;
-    background-image: url("images/etet_install_032.jpg");
+    background-image: url("event2.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
   }
@@ -764,7 +764,7 @@ footer {
   #event3 {
     width: 30rem;
     height: auto;
-    background-image: url("images/etet_install_036.jpg");
+    background-image: url("event3.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
   }
