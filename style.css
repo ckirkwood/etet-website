@@ -720,6 +720,90 @@ footer {
     margin: auto 0;
   }
 
+  #mainContainer {
+    width: 100%;
+    margin-top: 15rem;
+
+  }
+
+  .eventContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  #event1 {
+    width: 30rem;
+    height: auto;
+    background-image: url("images/etet_install_026.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  #event1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+  }
+
+  #event2 {
+    width: 30rem;
+    height: auto;
+    background-image: url("images/etet_install_032.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  #event2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+  }
+
+  #event3 {
+    width: 30rem;
+    height: auto;
+    background-image: url("images/etet_install_036.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  #event3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+  }
+
+  .eventTitle {
+    width: 25rem;
+    height: auto;
+    display: inline-block;
+    float: right;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 0;
+    margin: auto 0;
+  }
+
+
+  .eventTitle p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.3em;
+    color: rgb(138, 138, 138);
+
+  }
+
+  .eventTitle a {
+    text-decoration: none;
+    font-size: 0.5em;
+    color: #000;
+  }
+
   #map {
     width: 100%;
     display: flex;
