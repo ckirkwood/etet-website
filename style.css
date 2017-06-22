@@ -723,7 +723,6 @@ footer {
   #mainContainer {
     width: 100%;
     margin-top: 5rem;
-
   }
 
   .eventContainer {
@@ -810,7 +809,7 @@ footer {
     justify-content: center;
     position: relative;
     left: 0;
-    margin-top: 50%''
+    margin-top: 50%;
   }
 
   #map iframe {
