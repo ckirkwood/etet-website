@@ -1,4 +1,8 @@
 html {
+  max-width: 100%;
+}
+
+* {
 
 }
 
@@ -31,7 +35,7 @@ html {
 }
 
 body {
-  min-width: 100%;
+  max-width: 100%;
   min-height: 100%;
   margin: 0;
   padding: 0;
@@ -64,7 +68,7 @@ header {
 }
 
 .navigation {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   position: fixed;
   top: 2%;
@@ -102,6 +106,7 @@ header {
 
 .site-wrap {
   min-height: 100%;
+  max-width: 100%;
   background-color: white;
   position: relative;
   top: 0;
@@ -325,49 +330,74 @@ h1,h2,h3 {
   margin-bottom: 5%;
 }
 
-#eventCopy {
-  width: 70%;
-  height: 200px;
+#mainContainer {
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.eventContainer {
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
   margin: 10% auto;
-  margin-bottom: 0;
 }
 
 #event1 {
-  width: 25%;
-  height: 100%;
-  background-image: url("images/events/event1.png");
+  width: 30rem;
+  height: auto;
+  background-image: url("images/etet_install_026.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#event1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  float: left;
 }
 
 #event2 {
-  width: 25%;
-  height: 100%;
-  background-image: url("images/events/event2.png");
+  width: 30rem;
+  height: auto;
+  background-image: url("images/etet_install_032.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#event2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  float: left;
 }
 
 #event3 {
-  width: 25%;
-  height: 100%;
-  background-image: url("images/events/event3.png");
+  width: 30rem;
+  height: auto;
+  background-image: url("images/etet_install_036.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-#eventDetails {
-  width: 70%;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  margin-bottom: 15%;
+#event3 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  float: left;
 }
 
 .eventTitle {
-  width: 25%;
-  height: 100%;
+  width: 100%;
+  height: 12rem;
+  display: inline-block;
+  float: right;
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
   padding: 10px 0;
+  margin: auto 0;
 }
 
 .eventTitle p {
@@ -375,6 +405,7 @@ h1,h2,h3 {
   margin: 0;
   font-size: 0.75em;
   color: rgb(138, 138, 138);
+
 }
 
 .eventTitle a {
@@ -386,10 +417,11 @@ h1,h2,h3 {
   padding: 2%;
   border-radius: 10px;
   width: 90%;
+  height: auto;
   display: block;
-  margin: 3% auto;
-  margin-bottom: 0;
-  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  text-align: center;
 }
 
 
@@ -512,7 +544,7 @@ footer {
 
   #copy-body {
     width: 100%;
-    height: auto;
+    max-height: 100%;
     padding: 2px;
     display: block;
     margin-top: 30%;
@@ -694,70 +726,13 @@ footer {
     justify-content: center;
     position: relative;
     left: 0;
-    margin-top: 30%;
+    margin-top: 50%''
   }
 
   #map iframe {
-    max-width: 260px;
+    max-width: 270px;
     display: block;
   }
-
-  #eventCopy {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    margin: 30% auto;
-    margin-bottom: 0;
-  }
-
-  #event1 {
-    width: 30%
-    background-image: url("images/events/event1.png");
-  }
-
-  #event2 {
-    width: 30%;
-    background-image: url("images/events/event2.png");
-  }
-
-  #event3 {
-    width: 30%;
-    background-image: url("images/events/event3.png");
-  }
-
-  #eventDetails {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    margin-bottom: 75%;
-  }
-
-  .eventTitle {
-    width: 25%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 10px 0;
-  }
-
-  .eventTitle p {
-    padding: 0;
-    margin: 0;
-    font-size: 0.75em;
-    color: rgb(138, 138, 138);
-  }
-
-  .eventTitle a {
-    text-decoration: none;
-    color: #000;
-  }
-
-}
-
 
 
 @media only screen and (min-width:426px) and (max-width: 768px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
