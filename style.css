@@ -6,6 +6,10 @@ html {
 
 }
 
+a {
+  color: #000;
+}
+
 .background-image {
   background: url('images/etet_website-background-01.jpg');
   background-size: 125%;
