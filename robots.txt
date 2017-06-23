@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /index.html
+Allow: /about.html
+Allow: /locations.html
+Allow: /events.html
+Allow: /events/lunchtime-talk.html
+Allow: /events/walking-tour.html
+Allow: /events/data-poetry-workshop.html
+Allow: /contact.html
