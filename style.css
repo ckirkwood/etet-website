@@ -458,19 +458,19 @@ footer {
   width: 35%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
-  margin: 0 1%;
+  justify-content: space-around;
+  margin: 0 2%;
 }
 
 #logos img {
   display: inline-block;
-  height: 2.5rem;
-  margin: auto 0;
+  height: 40px;
+  margin: auto 3%;
 }
 
 #logos a {
-  height: 2.5rem;
-  margin: auto 0;
+  height: 40px;
+  margin: auto 3%;
 }
 
 #social {
