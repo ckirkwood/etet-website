@@ -915,6 +915,7 @@ footer {
    font-size: 0.75em;
    color: #696969;
    margin: 5%;
+   margin-left: 0;
    line-height: 1.2;
   }
 
