@@ -417,21 +417,12 @@ h1,h2,h3 {
   color: #000;
 }
 
-#map {
-  padding: 2%;
-  border-radius: 10px;
-  width: 90%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 10%;
-  text-align: left;
-}
+
 
 #map {
   width: 100%;
   display: flex;
-  justify-content: center;
+  text-align: justify;
   position: relative;
   left: 0;
   margin-top: 5%;
@@ -481,7 +472,7 @@ h1,h2,h3 {
 }
 
 
-.address li {
+.address ul {
 list-style: none;
 font-size: 0.75em;
 color: #696969;
