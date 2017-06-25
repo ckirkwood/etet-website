@@ -425,7 +425,7 @@ h1,h2,h3 {
   text-align: left;
   position: relative;
   left: 0;
-  margin-top: 5%;
+  margin: 5%;
 }
 
 #map iframe {
