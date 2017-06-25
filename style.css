@@ -425,7 +425,69 @@ h1,h2,h3 {
   display: block;
   margin: 0 auto;
   margin-bottom: 10%;
-  text-align: center;
+  text-align: left;
+}
+
+#map {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 0;
+  margin-top: 5%;
+}
+
+#map iframe {
+  max-width: 560px;
+  display: inline-block;
+  float: left;
+}
+
+#locations {
+  display: inline-block;
+  float: right;
+  margin: auto 3%;
+  width: 50%;
+}
+
+#col1 {
+ position:relative;
+ width: 50%;
+ padding: 0;
+ float: left;
+}
+
+#col2 {
+ position:relative;
+ width: 50%;
+ padding: 0;
+ float: right;
+}
+
+.address {
+  height: 40%;
+  margin-bottom: 10%;
+}
+
+.address h3 {
+  top:0;
+  margin: 0;
+}
+
+.address p {
+ font-size: 0.75em;
+ color: #696969;
+ margin: 2.5%;
+}
+
+
+.address ul {
+list-style: none;
+font-size: 0.75em;
+color: #696969;
+margin-top: 0;
+display: block;
+
 }
 
 
@@ -811,15 +873,64 @@ footer {
   #map {
     width: 100%;
     display: flex;
-    justify-content: center;
-    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
     left: 0;
-    margin-top: 50%;
+    margin-top: 20%;
   }
 
   #map iframe {
-    max-width: 270px;
+    max-width: 300px;
+    align-items: flex-start;
+    margin: 10% auto;
+  }
+
+  #locations {
     display: block;
+    margin: auto 3%;
+    width: 100%;
+    align-items: baseline;
+  }
+
+  #col1 {
+   width: 50%;
+   padding: 0;
+   float: left;
+  }
+
+  #col2 {
+   width: 50%;
+   padding: 0;
+   float: right;
+ }
+
+
+  .address {
+    height: 40%;
+    margin-bottom: 10%;
+    display: block;
+  }
+
+  .address h3 {
+    top:0;
+    margin: 0;
+  }
+
+  .address p {
+   font-size: 0.75em;
+   color: #696969;
+   margin: 5%;
+   line-height: 1.2;
+  }
+
+
+  .address ul {
+  list-style: none;
+  font-size: 0.75em;
+  color: #696969;
+  margin-top: 0;
+  margin-left: -20%;
+  display: block;
   }
 
 
