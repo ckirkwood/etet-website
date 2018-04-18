@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png"> 
+  <link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
   <title>every thing every time</title>
   <link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
   <meta name="description" content="every thing every time, a new artwork by Naho Matsuda">
@@ -67,55 +67,18 @@
     <div id="container">
       <div id="date_time"></div>
       <div id="poem">
-
-        poem loading...</div>
-
-      <div id="readout"></div>
+        <p>There is chat on the radio</p>
+        <p>a child shouts</p>
+        <p>no concert today</p>
+        <p>the piano is silent</p>
+        <p>is someone at the exhibition?</p>
+        <p>the mosque is not at prayer</p>
+        <p>the community doesn't meet</p>
+        <p>and no ice cream is sold.</p>
+      </div>
     </div>
 
   </body>
 
 
-  <script type="text/javascript">window.onload = date_time('date_time');</script>
-  </div>
-
-  <script type="text/javascript">
-    var poemDiv = document.getElementById('poem');
-    var readoutDiv = document.getElementById('readout');
-    var currentTicks = 0;
-    var maxTicks = 60;
-    getPoem = function() {
-      var url;
-        url = "http://everythingeverytime.herokuapp.com/poem";
-      fetch(url + getLocation())
-      .then((resp) => resp.json())
-      .then(function(data) {
-        printPoem(data);
-      })
-    }
-    getLocation = function() {
-      var checkedElement = document.querySelector('input[name="location"]:checked').value;
-      return "?location=" + checkedElement;
-    }
-    printPoem = function(data) {
-      poemDiv.innerHTML = "";
-      for(var i = 0; i < data.poem.length; i++) {
-        poemDiv.innerHTML = poemDiv.innerHTML + data.poem[i] + "<br />";
-      }
-    }
-    updateCounter = function() {
-      if(currentTicks < maxTicks) {
-        currentTicks++;
-      } else {
-        currentTicks = 0;
-        poemDiv.innerHTML = "poem loading...";
-        getPoem();
-      }
-      readoutDiv.innerHTML = "Refreshing in " + (maxTicks - currentTicks) + " seconds";
-    }
-    setInterval(function() {
-      updateCounter();
-    }, 1000);
-    getPoem();
-  </script>
 </html>
